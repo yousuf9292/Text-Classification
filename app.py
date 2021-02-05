@@ -32,8 +32,8 @@ def form():
 		return redirect(url_for('predictions'))
 	return render_template('form.html',form=form)
 
-model=load_model('C:\\Users\\yousuf\\Text.h5')
-tokenize=joblib.load('C:\\Users\\yousuf\\tokenize.pkl')
+model=load_model('Text.h5')
+tokenize=joblib.load('tokenize.pkl')
 
 
 @app.route('/predictions')
